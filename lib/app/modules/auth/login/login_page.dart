@@ -51,9 +51,7 @@ class LoginPage extends StatelessWidget {
                         child: VakinhaButton(
                             width: context.width,
                             label: 'ENTRAR',
-                            onPressed: () {
-                              Get.toNamed(AppRoutes.REGISTER);
-                            }),
+                            onPressed: () {}),
                       ),
                       const Spacer(),
                       Row(
@@ -61,7 +59,9 @@ class LoginPage extends StatelessWidget {
                         children: [
                           const Text('Não possui uma conta?'),
                           TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.toNamed(AppRoutes.REGISTER);
+                            },
                             child: const Text(
                               'Cadastre-se',
                               style: VakinhaUi.textBold,
